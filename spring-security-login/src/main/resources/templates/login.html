@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<form th:action="@{/login}" method="post" class="form-signin">
+					<h2 class="form-heading">Log in</h2>
+
+					<div class="form-group ">
+						<span></span> <input name="username" type="text"
+							class="form-control" placeholder="Username" autofocus="true" />
+						<input name="password" type="password" class="form-control"
+							placeholder="Password" /> <span></span>
+
+						<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+					</div>
+
+				</form>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>
